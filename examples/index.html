@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>examples</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/js/vendor/flexslider/flexslider.css" type="text/css" media="screen" />
+    <script type="application/javascript" src="/js/vendor/jquery.min.js"></script>
+    <script type="application/javascript" src="/js/setup.js"></script>
+    <!-- FlexSlider -->
+    <script defer src="/js/vendor/flexslider/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div id="nav"></div>
+
+<div class="container">
+
+    <div class="col-sm-1 logobar">
+
+        <!-- <div class=col-md-4" >
+            <div class="fdis_logo"></div>
+        </div>-->
+        <div class=col-md-4" >
+            <div class="howdens_logo"></div>
+        </div>
+        <div class=col-md-4" >
+            <div class="certass_logo"></div>
+        </div>
+        <div class=col-md-4" >
+            <div class="safe_contractor_logo"></div>
+        </div>
+
+    </div>
+
+    <div class="col-sm-5">
+<h1>Examples</h1>
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="/img/webimage_firedoor3.jpg" />
+                        </li>
+                        <li>
+                            <img src="/img/webimage_firedoor4.jpg" />
+                        </li>
+                        <li>
+                            <img src="/img/webimage_firedoor5.jpg" />
+                        </li>
+                        <li>
+                            <img src="/img/webimage_firedoor6.jpg" />
+                        </li>
+                        <li>
+                            <img src="/img/webimage_firedoor7.jpg" />
+                        </li>
+                        <li>
+                            <img src="/img/webimage_firedoor8.jpg" />
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+    </div>
+        </div>
+</div>
+<div class="footer"></div>
+
+</body>
+</html>

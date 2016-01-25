@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>contact</title>
+
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="application/javascript" src="/js/vendor/jquery.min.js"></script>
+    <script type="application/javascript" src="/js/setup.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
+    <!-- -->
+
+
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5310065,-0.0668519),
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+            var myLatLng = new google.maps.LatLng(51.5310065,-0.0668519); //51.5310065,-0.0668519,19.66z
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                icon: iconBase + 'poi.png'
+            });
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+
+<div id="nav"></div>
+<div class="container">
+
+
+    <div class="row">
+
+        <div class="col-sm-6">
+
+
+        <h1>Contact</h1>
+        <p>
+             Use this form to make an enquiry
+
+        </p>
+        <form id="contactform"  action="../scripts/formmail.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name: *</label>
+                <input type="text" class="form-control" name="name" value="">
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email: *</label>
+                <input type="text" class="form-control" name="email" value="">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" name="phone" value="">
+            </div>
+            <div class="form-group">
+                <label for="message">Message: *</label>
+                <textarea name="message" class="form-control"></textarea>
+            </div>
+            <label>Please prove you're human: *</label>
+           <!-- <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcaHO0SAAAAAKkopzmYs-oRVXHawnimAwfedNnr"></script>
+
+
+              <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcaHO0SAAAAAKkopzmYs-oRVXHawnimAwfedNnr" height="300" width="500" frameborder="0"></iframe>--><br/>
+             <div class="g-recaptcha" data-sitekey="6LcR3xATAAAAADF9IiuCSY56LvWf7QM0BiCuplzF"></div>
+            <div class="form-group">
+                <div class="col-md-9 col-md-offset-3">
+                    <div id="messages"></div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+                    </form><!-- action="../scripts/send_form_email2.php" -->
+        </div>
+
+
+
+       <div class="col-sm-6 locationmap">
+
+           <div class="row">
+
+           <h1>Find Us</h1>
+
+           <div id="map-canvas" class="map" ></div>
+
+           </div>
+
+           <div class="row">
+
+           <div class="address">
+               <ul class="address_ul">
+                   <li class="address">332 Hackney Rd, London, E2 7AX |</li>
+                   <li class="phone">+44 (0) 020 7739 2288 |</li>
+                   <li class="email"><a href="mailto:info@firedoorlondon.co.uk">info@firedoorlondon.co.uk</a></li>
+               </ul>
+           </div>
+
+               </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+<div class="footer"></div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('#contactform').bootstrapValidator({
+            container: '#messages',
+           /* feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },*/
+            fields: {
+                name: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The full name is required and cannot be empty'
+                        }
+                    }
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The email address is required and cannot be empty'
+                        },
+                        emailAddress: {
+                            message: 'The email address is not valid'
+                        }
+                    }
+                },
+                phone: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The title is required and cannot be empty'
+                        },
+                        stringLength: {
+                            max: 100,
+                            message: 'The title must be less than 100 characters long'
+                        }
+                    }
+                },
+                message: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The content is required and cannot be empty'
+                        },
+                        stringLength: {
+                            max: 500,
+                            message: 'The content must be less than 500 characters long'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
+
+
+</html>

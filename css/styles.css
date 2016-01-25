@@ -1,0 +1,234 @@
+/*.logo{
+    background-image: url(/img/logo_2.png);
+    background-repeat: no-repeat;
+}*/
+
+.row{
+    /*margin-left:-10px;*/
+}
+
+.title{
+    font-size: 30px;
+    padding-top: 5px;
+    margin-right: 10px;
+    float:left;
+    color: #013580;
+
+}
+
+.fire_txt{
+    float:left;
+    margin-right: 5px;
+    color: red;
+}
+
+.home-p{
+
+    color: #ffffff;
+
+}
+
+.home-h1{
+    color:#ffffff;
+}
+
+
+
+.mt-header{
+   /* height: 100px;*/
+}
+
+a{
+    color:#f78e0e;
+}
+
+.footer{
+    margin-top: 50px;
+    padding-top: 20px;
+    background:#707070;
+    padding-bottom: 20px;
+    color:#FFFFFF;
+}
+
+form label {
+    display: block;
+    margin: 5px 0 15px;
+}
+
+.back {
+
+    width : 100%;
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+
+}
+
+.map{
+    width:auto;
+    height:200px;
+}
+
+.home{
+    background-image:  url(/img/webimage_firedoor.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbuttons{
+    padding-top: 20px;
+}
+
+.mainnav{
+    font-size: 20px;
+}
+
+.sidepic{
+    padding-top: 74px;
+}
+
+
+
+.address_ul{
+    display:inline;
+}
+
+.address_ul{
+
+    padding: 15px 0 0 0;
+    list-style-type: none;
+    margin: auto 0;
+
+    width:100%;
+    float:left;
+
+
+}
+
+.address_ul li{
+   /* color:#6e9553;*/
+    display:inline;
+
+}
+
+.logobar{
+    padding-top:20px;
+    margin-right: 20px;
+    float:left;
+}
+
+.sprite-gplus-circle, .sprite-twitter-circle, .sprite-facebook-circle {
+
+    background-image: url(/img/main.png);
+  /*  background-image: linear-gradient(transparent, transparent), url(/yframe/yelldotcom/default/_yframe/sprites/main.svg?templates-1.2.16);*/
+    background-repeat: no-repeat;
+    height: 33px;
+    width: 33px;
+
+
+}
+
+.fdis_logo, .howdens_logo, .certass_logo, .safe_contractor_logo{
+    background-image: url(/img/logos/fdis.gif);
+    background-size: 70px 54px;
+    width:70px;
+    height:54px;
+    float:left;
+    margin: 5px;
+
+
+}
+.howdens_logo{
+    background-image: url(/img/logos/howdens.jpg);
+
+
+
+}
+
+.certass_logo{
+    background-image: url(/img/logos/certass_logo.jpg);
+
+
+}
+
+.safe_contractor_logo{
+    background-image: url(/img/logos/safecontractor2.jpg);
+
+}
+
+.share ul {
+    list-style: none;
+    margin: 7px 10px 10px;
+}
+
+.share--item{
+
+    display: inline-block;
+}
+
+.share--item a {
+    padding: 0 8px 0 0;
+    text-indent: -9999px;
+    display: block;
+}
+
+.trans-all {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.sprite-gplus-circle{
+    background-position: 0 -37px;
+
+}
+
+.sprite-twitter-circle{
+    background-position: 0 -322px;
+
+}
+
+.sprite-facebook-circle{
+    background-position: 0 0px;
+}
+.copyright{
+
+    margin-top: 20px;
+    text-align: center;
+    font-size: smaller;
+}
+
+#map-canvas{
+    margin-top: 50px;
+}
+
+.logo{
+    width:50px;
+    height:40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-image: url(/img/logo_em_7_img.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.holding_h1{
+    width:50px;
+    height:40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+.holding-number-h1{
+
+color:white;
+    padding-top: 80px;
+    margin-left: 5px;
+
+}
